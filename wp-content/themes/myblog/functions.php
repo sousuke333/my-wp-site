@@ -1,6 +1,13 @@
 <?php
 add_action('init', function(){
     add_theme_support('post-thumbnails');
+
+
+    // メニューをサポート
+    register_nav_menus([
+      'global_nav' => 'グローバルナビゲーション'//,
+      //'footer_nav' => 'フッターナビゲーション',
+    ]);
 });
 
 /*アイキャッチ画像がなければ、標準画像を取得する*/
